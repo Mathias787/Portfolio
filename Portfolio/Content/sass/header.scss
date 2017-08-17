@@ -1,0 +1,21 @@
+﻿header {
+    display: flex;
+
+    img, p {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    p {
+        margin-left:50px;
+        font-family: $header-font;
+        font-size: 2em;
+        font-weight: bold;
+
+        span {
+            display: block;
+            font-size: 0.7em;
+            color: lighten( $copy-color, 25% );
+        }
+    }
+}

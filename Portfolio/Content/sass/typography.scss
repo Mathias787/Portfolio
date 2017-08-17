@@ -1,0 +1,22 @@
+﻿// Google Fonts
+@import url('//fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,600,700');
+
+// Font Variables
+$header-font: 'Roboto Slab', serif;
+$body-font: 'Open Sans', sans-serif;
+
+$body-font-size: 13pt;
+$copy-color: #222;
+
+
+// Styles
+body {
+  font-size: $body-font-size;
+  font-family: $body-font;
+  color: $copy-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+  font-weight: 600;
+}

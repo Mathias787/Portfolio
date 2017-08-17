@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-us">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+        <img src="~/Content/Images/logo.svg" style="height: 70px;" />
+        <p>Matthew Rhine: <span>Developer working on, around, and outside the stack</span></p>
+    </header>
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Programming", "Index", "Programming")</li>
+            <li>@Html.ActionLink("Music", "Index", "Music")</li>
+            <li>@Html.ActionLink("Photography", "Index", "Photography")</li>
+            <li>@Html.ActionLink("Thoughts", "Index", "Thoughts")</li>
+        </ul>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+    <aside>
+        <h2>Cool sidebar!</h2>
+        <p>
+            I love the idea of side content. You can put stuff you want everyone to see here.
+            This should be a region that can be set on a page by page basis. Grid will allow it to do some pretty neat stuff!
+        </p>
+    </aside>
+    <footer>
+        <h2>Footers are a great place to put the stuff you hope people will look at.</h2>
+        <div class="social-links">
+            <p><a href="https://www.instagram.com/frontend.dogrammer/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+            <p><a href="https://twitter.com/Mathias787" target="_blank" rel="noopener noreferrer">Twitter</a></p>
+            <p><a href="https://500px.com/mattrhine" target="_blank" rel="noopener noreferrer">500px</a></p>
+            <p><a href="https://github.com/Mathias787" target="_blank" rel="noopener noreferrer">Github</a></p>
+        </div>
+        <p>&copy; @DateTime.Now.Year - MattRhine.com</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
