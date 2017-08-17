@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MusicController.cs" />
@@ -214,6 +215,8 @@
     <Content Include="Content\sass\reset.scss" />
     <Content Include="Content\sass\style.scss" />
     <Content Include="Content\sass\typography.scss" />
+    <None Include="Properties\PublishProfiles\MR-PortfolioSite - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\MR-PortfolioSite - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -226,6 +229,13 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Count\scripts\count-game-graphics.js" />
+    <Content Include="Views\Count\scripts\game-es6.js" />
+    <Content Include="Views\Count\soundfx\game-over.aiff" />
+    <Content Include="Views\Count\soundfx\game-over.wav" />
+    <Content Include="Views\Count\soundfx\jump7.aiff" />
+    <Content Include="Views\Count\soundfx\jump7.wav" />
+    <Content Include="Views\Count\styles\game.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -264,6 +274,11 @@
     <Content Include="Views\Photography\Index.cshtml" />
     <Content Include="Views\Programming\Index.cshtml" />
     <Content Include="Views\Thoughts\Index.cshtml" />
+    <Content Include="Views\Count\Index.cshtml">
+      <BrowseToURL>~/Programming/Count/Index</BrowseToURL>
+    </Content>
+    <Content Include="Views\Count\soundfx\game-over.ogg" />
+    <Content Include="Views\Count\soundfx\jump7.ogg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -17,9 +17,10 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,600,700" rel="stylesheet">
+    @Styles.Render("~/bundles/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    @RenderSection("styles", required: false)
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -40,13 +41,7 @@
     <main>
         @RenderBody()
     </main>
-    <aside>
-        <h2>Cool sidebar!</h2>
-        <p>
-            I love the idea of side content. You can put stuff you want everyone to see here.
-            This should be a region that can be set on a page by page basis. Grid will allow it to do some pretty neat stuff!
-        </p>
-    </aside>
+    <aside>@RenderSection("Sidebar", required: false)</aside>
     <footer>
         <h2>Footers are a great place to put the stuff you hope people will look at.</h2>
         <div class="social-links">

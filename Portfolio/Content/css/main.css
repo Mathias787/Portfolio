@@ -6,7 +6,6 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("//fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,600,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -464,6 +463,8 @@ aside {
   border-left: 1px solid #333;
   padding-left: 20px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.05) 0%, transparent 100%); }
+  aside:empty {
+    display: none; }
 
 footer {
   background-color: #eee; }

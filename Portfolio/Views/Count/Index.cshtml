@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="game">
+    <canvas id="game-canvas" width="300" height="400">
+        This is an interactive game.
+    </canvas>
+</div>
+
+@section styles {
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="styles/game.css">
+}
+
+@section scripts {
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="scripts/count-game-graphics.js"></script>
+    <script src="scripts/game-es6.js"></script>
+}
