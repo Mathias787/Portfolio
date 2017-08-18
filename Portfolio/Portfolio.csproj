@@ -231,6 +231,7 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Count\scripts\count-game-graphics.js" />
     <Content Include="Views\Count\scripts\game-es6.js" />
+    <Content Include="Views\Count\scripts\game-script.js" />
     <Content Include="Views\Count\soundfx\game-over.aiff" />
     <Content Include="Views\Count\soundfx\game-over.wav" />
     <Content Include="Views\Count\soundfx\jump7.aiff" />
