@@ -23,9 +23,6 @@
     @RenderSection("styles", required: false)
 </head>
 <body>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
     <header>
         <img src="~/Content/Images/logo.svg" style="height: 70px;" />
         <p>Matthew Rhine: <span>Developer working on, around, and outside the stack</span></p>
@@ -53,8 +50,6 @@
         <p>&copy; @DateTime.Now.Year - MattRhine.com</p>
     </footer>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>

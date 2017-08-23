@@ -1,15 +1,31 @@
 ﻿nav {
+    @media #{$mq-xl-min} {
+        background-color: #ccc;
+    }
+
     ul {
         display: flex;
 
         padding: 0;
         list-style: none;
 
+        @media #{$mq-xl-min} {
+            flex-direction: column;
+        }
+
         li {
             padding: 20px 30px;
 
             &:first-child {
                 padding-left: 0;
+            }
+
+            @media #{$mq-xl-min} {
+                padding-left: 50px;
+
+                &:first-child {
+                    padding-left: 50px;
+                }
             }
 
             &:last-child {
