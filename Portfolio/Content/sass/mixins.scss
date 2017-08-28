@@ -3,7 +3,7 @@
 // NONE YET
 
 // Breakpoint variables
-$md-min:  "600px";
+$md-min:  "650px";
 $lg-min:  "1100px";
 $xl-min:  "1600px";
 $qhd-min: "1921px";
@@ -15,3 +15,12 @@ $mq-md-min:  "screen and ( min-width: #{$md-min} )";
 $mq-lg-min:  "screen and ( min-width: #{$lg-min} )";
 $mq-xl-min:  "screen and ( min-width: #{$xl-min} )";
 $mq-qhd-min: "screen and ( min-width: #{$qhd-min} )";
+
+
+// site color
+$primary-color: #327232;
+$copy-color: #222;
+$border-color: #aaa;
+
+// borders
+$site-border: 1px solid $border-color;

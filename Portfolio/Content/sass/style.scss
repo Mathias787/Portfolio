@@ -1,7 +1,38 @@
-﻿body {
-	color: #222;
+﻿/* #region general styles */
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-main {
-
+body {
+	color: $copy-color;
 }
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $primary-color;
+
+    &:hover {
+        color: darken($primary-color, 15%);
+    }
+}
+
+/* #endregion - general styles */
+
+/* #region embed styles */
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* #endregion embed styles */

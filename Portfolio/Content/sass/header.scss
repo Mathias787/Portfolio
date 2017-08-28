@@ -1,5 +1,17 @@
 ﻿header {
     display: flex;
+    padding: 20px 0;
+
+    @media #{$mq-md-min} {
+
+    }
+
+    @media #{$mq-lg-min} {
+        padding: 30px 0;
+    }
+
+    @media #{$mq-xl-min} {
+    }
 
     img, p {
         margin-top: auto;
@@ -7,15 +19,27 @@
     }
 
     p {
-        margin-left:50px;
         font-family: $header-font;
-        font-size: 2em;
         font-weight: bold;
+        margin-left:25px;
+
+        @media #{$mq-md-min} {
+            font-size: 1.25em;
+        }
+
+        @media #{$mq-lg-min} {
+            margin-left:50px;
+            font-size: 2em;
+        }
 
         span {
             display: block;
-            font-size: 0.7em;
+            font-size:0.5em;
             color: lighten( $copy-color, 25% );
+
+            @media #{$mq-lg-min} {
+                font-size: 0.7em;
+            }
         }
     }
 }

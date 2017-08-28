@@ -24,15 +24,15 @@
 </head>
 <body>
     <header>
-        <img src="~/Content/Images/logo.svg" style="height: 70px;" />
+        <a href="~/"><img src="~/Content/Images/logo.svg" style="height: 70px;" alt="Logo: </>" /></a>
         <p>Matthew Rhine: <span>Developer working on, around, and outside the stack</span></p>
     </header>
     <nav>
         <ul>
-            <li>@Html.ActionLink("Programming", "Index", "Programming")</li>
-            <li>@Html.ActionLink("Music", "Index", "Music")</li>
             <li>@Html.ActionLink("Photography", "Index", "Photography")</li>
-            <li>@Html.ActionLink("Thoughts", "Index", "Thoughts")</li>
+            <li>@Html.ActionLink("Music", "Index", "Music")</li>
+            <li>@Html.ActionLink("Programming", "Index", "Programming")</li>
+            @*<li>@Html.ActionLink("Thoughts", "Index", "Thoughts")</li>*@
         </ul>
     </nav>
     <main>
@@ -40,13 +40,13 @@
     </main>
     <aside>@RenderSection("Sidebar", required: false)</aside>
     <footer>
-        <h2>Footers are a great place to put the stuff you hope people will look at.</h2>
-        <div class="social-links">
-            <p><a href="https://www.instagram.com/frontend.dogrammer/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-            <p><a href="https://twitter.com/Mathias787" target="_blank" rel="noopener noreferrer">Twitter</a></p>
-            <p><a href="https://500px.com/mattrhine" target="_blank" rel="noopener noreferrer">500px</a></p>
-            <p><a href="https://github.com/Mathias787" target="_blank" rel="noopener noreferrer">Github</a></p>
-        </div>
+        <h2>The other places I maintain content</h2>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/frontend.dogrammer/" target="_blank" rel="noopener" title="Instagram"><img src="~/Content/images/icons/instagram_mark_dark.svg" alt="Instagram" /></a></li>
+            <li><a href="https://500px.com/mattrhine" target="_blank" rel="noopener" title="500px"><img src="~/Content/images/icons/500px_mark_dark.svg" alt="500px" /></a></li>
+            <li><a href="https://twitter.com/Mathias787" target="_blank" rel="noopener" title="Twitter"><img src="~/Content/images/icons/twitter_mark_dark.svg" alt="Twitter" /></a></li>
+            <li><a href="https://github.com/Mathias787" target="_blank" rel="noopener" title="Github"><img src="~/Content/images/icons/github_mark_dark.svg" alt="Github" /></a></li>
+        </ul>
         <p>&copy; @DateTime.Now.Year - MattRhine.com</p>
     </footer>
 

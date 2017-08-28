@@ -1,8 +1,33 @@
 ﻿footer {
     background-color: #eee;
     padding: 20px;
+    border-top: $site-border;
 
     @media #{$mq-md-min} {
         padding: 50px;
+    }
+
+    ul.social-links {
+        display: flex;
+        padding: 0;
+        list-style: none;
+
+        li {
+            padding: 0 10px;
+            &:first-child {
+                padding-left: 0;
+            }
+
+            a {
+                display: block;
+                padding: 15px;
+
+                img {
+                    height:30px;
+                    width: auto;
+                    fill: $copy-color;
+                }
+            }
+        }
     }
 }

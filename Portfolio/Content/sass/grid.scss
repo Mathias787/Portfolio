@@ -2,15 +2,23 @@
 
 body {
 	display: grid;
+    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 
 	// 0px column is for navigation menu when JS is active
     grid-template-columns: 0px 20px 1fr 20px;
-	grid-template-rows: auto auto auto auto;
+	grid-template-rows: auto auto auto 1fr auto;
 
     @media #{$mq-md-min} {
-        grid-template-columns: 50px 700px 1fr 300px 50px;
-	    grid-template-rows: 100px 120px 1fr auto;
+        grid-template-columns: 25px 1fr 25px;
+	    grid-template-rows: auto auto auto auto 1fr auto;
+    }
+
+    @media #{$mq-lg-min} {
+        grid-template-columns: 50px auto 1fr auto 50px;
+	    grid-template-rows: auto auto auto 1fr auto;
     }
 
     @media #{$mq-xl-min} {
@@ -23,6 +31,10 @@ header {
     grid-column: 3;
 
     @media #{$mq-md-min} {
+        grid-column: 2;
+    }
+
+    @media #{$mq-lg-min} {
 	    grid-column: 2 / span 3;
 	    grid-row: 1;
     }
@@ -37,7 +49,12 @@ nav {
     grid-column: 1 / span -1;
 
     @media #{$mq-md-min} {
-        grid-row: 2 / span 2;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    @media #{$mq-lg-min} {
+        grid-row: 2;
         grid-column: 2 / span 3;
     }
 
@@ -58,6 +75,10 @@ main {
         grid-area: 3 / 2;
     }
 
+    @media #{$mq-lg-min} {
+        grid-area: 3 / 2;
+    }
+
     @media #{$mq-xl-min} {
         grid-area: 2 / 4;
     }
@@ -68,7 +89,11 @@ aside {
 	//grid-row: 3;
     //grid-column: 4;
 
-    @media #{$mq-xl-min} {
+    @media #{$mq-md-min} {
+        grid-area: 4 / 2;
+    }
+
+    @media #{$mq-lg-min} {
         grid-area: 3 / 4;
     }
 
@@ -78,11 +103,17 @@ aside {
 }
 
 footer {
-	grid-row: 4;
+	grid-row: 5;
     grid-column: 2 / span 3;
 
     @media #{$mq-md-min} {
-        grid-area: 4 / 1 / 4 / -1;
+        grid-row: 6;
+        grid-column: 1 / span 4;
+    }
+
+    @media #{$mq-lg-min} {
+        grid-row: 6;
+        grid-column: 1 / span 5;
     }
 
     @media #{$mq-xl-min} {

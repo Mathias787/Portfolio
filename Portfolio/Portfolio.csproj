@@ -192,7 +192,12 @@
       <DependentUpon>main.css</DependentUpon>
     </Content>
     <Content Include="Content\css\normalize.css" />
+    <Content Include="Content\images\icons\500px_mark_dark.svg" />
+    <Content Include="Content\images\icons\github_mark_dark.svg" />
+    <Content Include="Content\images\icons\instagram_mark_dark.svg" />
+    <Content Include="Content\images\icons\twitter_mark_dark.svg" />
     <Content Include="Content\images\logo.svg" />
+    <Content Include="Content\images\photography\philly-towers-in-a-row.jpg" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
     <Content Include="favicon.ico" />

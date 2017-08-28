@@ -1,11 +1,16 @@
 ﻿nav {
+
+    @media #{$mq-md-min} {
+        border-top: $site-border;
+        border-bottom: $site-border;
+    }
+
     @media #{$mq-xl-min} {
-        background-color: #ccc;
+        background-color: $border-color;
     }
 
     ul {
         display: flex;
-
         padding: 0;
         list-style: none;
 
@@ -14,22 +19,40 @@
         }
 
         li {
-            padding: 20px 30px;
 
-            &:first-child {
-                padding-left: 0;
+            a {
+                padding: 20px 30px;
+
+                @media #{$mq-md-min} {
+                    padding: 10px 20px;
+                }
+
+                @media #{$mq-xl-min} {
+                    padding: 20px 30px;
+                }
+
+                text-decoration: none;
+                font-weight: 600;
             }
 
-            @media #{$mq-xl-min} {
-                padding-left: 50px;
-
-                &:first-child {
-                    padding-left: 50px;
+            &:first-child {
+                a {
+                    padding-left: 0;
                 }
             }
 
-            &:last-child {
-                padding-right: 0;
+            @media #{$mq-xl-min} {
+                a {
+                    padding-left: 50px;
+
+                    &:first-child {
+                        padding-left: 50px;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
             }
         }
     }
