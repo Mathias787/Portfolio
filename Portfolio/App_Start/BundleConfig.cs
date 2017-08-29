@@ -25,6 +25,14 @@ namespace Portfolio
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/css/normalize.css",
                       "~/Content/css/main.css"));
+
+            // Home style bundle
+            bundles.Add(new StyleBundle("~/bundles/sections/home").Include(
+                      "~/Content/css/sections/sect-home.css"));
+
+            // Photography bundle
+            bundles.Add(new StyleBundle("~/bundles/sections/photography").Include(
+                      "~/Content/css/sections/sect-photography.css"));
         }
     }
 }

@@ -6,7 +6,7 @@
 $md-min:  "650px";
 $lg-min:  "1100px";
 $xl-min:  "1600px";
-$qhd-min: "1921px";
+$qhd-min: "2100px";
 
 // Query beginning
 
@@ -21,6 +21,7 @@ $mq-qhd-min: "screen and ( min-width: #{$qhd-min} )";
 $primary-color: #327232;
 $copy-color: #222;
 $border-color: #aaa;
+$off-white: #eee;
 
 // borders
 $site-border: 1px solid $border-color;

@@ -1,0 +1,12 @@
+﻿/* #region photography page */
+
+.dogtography-box {
+    display: flex;
+    justify-content: space-between;
+
+    & div + div {
+        margin-left: 10px;
+    }
+}
+
+/* #endregion photography page */

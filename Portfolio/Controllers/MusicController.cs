@@ -13,5 +13,12 @@ namespace Portfolio.Controllers
         {
             return View();
         }
+
+        /* Classical sub section */
+
+        public ActionResult Classical()
+        {
+            return View();
+        }
     }
 }

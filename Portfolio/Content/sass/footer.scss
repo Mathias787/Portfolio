@@ -1,10 +1,23 @@
 ﻿footer {
-    background-color: #eee;
+    background-color: $off-white;
     padding: 20px;
     border-top: $site-border;
 
     @media #{$mq-md-min} {
         padding: 50px;
+    }
+
+    @media #{$mq-qhd-min} {
+        position: relative;
+        border-top: none;
+        border-left: $site-border;
+
+
+        & > div {
+            position: fixed;
+            /*height: 100vh; Looking for a solution if the user makes the browser window too small vertically
+            overflow-y: scroll;*/
+        }
     }
 
     ul.social-links {

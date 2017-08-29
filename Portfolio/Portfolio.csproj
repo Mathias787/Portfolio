@@ -192,11 +192,26 @@
       <DependentUpon>main.css</DependentUpon>
     </Content>
     <Content Include="Content\css\normalize.css" />
+    <Content Include="Content\css\sections\sect-home.css" />
+    <Content Include="Content\css\sections\sect-home.min.css">
+      <DependentUpon>sect-home.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\sections\sect-photography.css" />
+    <Content Include="Content\css\sections\sect-photography.min.css">
+      <DependentUpon>sect-photography.css</DependentUpon>
+    </Content>
     <Content Include="Content\images\icons\500px_mark_dark.svg" />
     <Content Include="Content\images\icons\github_mark_dark.svg" />
     <Content Include="Content\images\icons\instagram_mark_dark.svg" />
     <Content Include="Content\images\icons\twitter_mark_dark.svg" />
     <Content Include="Content\images\logo.svg" />
+    <Content Include="Content\images\photography\dogtography\dog-looking-up-to-side.jpg" />
+    <Content Include="Content\images\photography\dogtography\mini-aussie.jpg" />
+    <Content Include="Content\images\photography\dogtography\picnic-table-dog.jpg" />
+    <Content Include="Content\images\photography\dogtography\puppy-pounce.jpg" />
+    <Content Include="Content\images\photography\dogtography\sheltie-looking-right.jpg" />
+    <Content Include="Content\images\photography\dogtography\stairs-dog.jpg" />
+    <Content Include="Content\images\photography\dogtography\white-cottonball.jpg" />
     <Content Include="Content\images\photography\philly-towers-in-a-row.jpg" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
@@ -207,7 +222,7 @@
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="bundleconfig.json" />
     <Content Include="compilerconfig.json" />
-    <Content Include="compilerconfig.json.defaults" />
+    <None Include="compilerconfig.json.defaults" />
     <Content Include="Content\sass\aside.scss" />
     <Content Include="Content\sass\footer.scss" />
     <Content Include="Content\sass\grid.scss" />
@@ -219,6 +234,8 @@
     <Content Include="Content\sass\reset.scss" />
     <Content Include="Content\sass\style.scss" />
     <Content Include="Content\sass\typography.scss" />
+    <Content Include="Content\sass\sections\sect-home.scss" />
+    <None Include="Content\sass\sections\sect-photography.scss" />
     <None Include="Properties\PublishProfiles\MR-PortfolioSite - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\MR-PortfolioSite - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -271,6 +288,7 @@
     <Content Include="Views\Photography\Index.cshtml" />
     <Content Include="Views\Programming\Index.cshtml" />
     <Content Include="Views\Thoughts\Index.cshtml" />
+    <Content Include="Views\Music\Classical.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

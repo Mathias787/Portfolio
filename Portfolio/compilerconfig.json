@@ -2,5 +2,13 @@
   {
     "outputFile": "Content/CSS/main.css",
     "inputFile": "Content/SASS/main.scss"
+  },
+  {
+    "outputFile": "Content/CSS/sections/sect-home.css",
+    "inputFile": "Content/SASS/sections/sect-home.scss"
+  },
+  {
+    "outputFile": "Content/CSS/sections/sect-photography.css",
+    "inputFile": "Content/SASS/sections/sect-photography.scss"
   }
 ]
