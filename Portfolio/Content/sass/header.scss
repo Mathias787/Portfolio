@@ -3,7 +3,6 @@
     padding: 20px 0;
 
     @media #{$mq-md-min} {
-
     }
 
     @media #{$mq-lg-min} {
@@ -21,25 +20,22 @@
     p {
         font-family: $header-font;
         font-weight: bold;
-        margin-left:25px;
+        font-size: 1.1em;
+        margin-left: 25px;
 
         @media #{$mq-md-min} {
-            font-size: 1.25em;
+            font-size: 1.65em;
         }
 
         @media #{$mq-lg-min} {
-            margin-left:50px;
+            margin-left: 50px;
             font-size: 2em;
         }
 
         span {
             display: block;
-            font-size:0.5em;
+            font-size: 0.65em;
             color: lighten( $copy-color, 25% );
-
-            @media #{$mq-lg-min} {
-                font-size: 0.7em;
-            }
         }
     }
 }

@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -184,9 +185,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="android-chrome-192x192.png" />
-    <Content Include="android-chrome-256x256.png" />
-    <Content Include="apple-touch-icon.png" />
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\main.min.css">
       <DependentUpon>main.css</DependentUpon>
@@ -204,6 +202,7 @@
     <Content Include="Content\images\icons\github_mark_dark.svg" />
     <Content Include="Content\images\icons\instagram_mark_dark.svg" />
     <Content Include="Content\images\icons\twitter_mark_dark.svg" />
+    <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\logo.svg" />
     <Content Include="Content\images\photography\dogtography\dog-looking-up-to-side.jpg" />
     <Content Include="Content\images\photography\dogtography\mini-aussie.jpg" />
@@ -213,13 +212,9 @@
     <Content Include="Content\images\photography\dogtography\stairs-dog.jpg" />
     <Content Include="Content\images\photography\dogtography\white-cottonball.jpg" />
     <Content Include="Content\images\photography\philly-towers-in-a-row.jpg" />
-    <Content Include="favicon-16x16.png" />
-    <Content Include="favicon-32x32.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="mstile-150x150.png" />
-    <Content Include="safari-pinned-tab.svg" />
     <Content Include="bundleconfig.json" />
     <Content Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults" />
@@ -315,7 +310,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>65400</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
