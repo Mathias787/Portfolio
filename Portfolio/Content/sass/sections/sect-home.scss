@@ -1,4 +1,18 @@
-﻿/* #region home page */
+﻿@import "../mixins";
+/* #region home page */
 
+.category-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    div.item {
+        width: 100%;
+
+        @media #{$mq-lg-min} {
+            width: calc(33.333% - 20px);
+        }
+    }
+}
 
 /* #endregion home page */

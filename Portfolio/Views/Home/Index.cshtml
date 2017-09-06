@@ -3,6 +3,23 @@
     ViewBag.Description = "Matt Rhine's portfolio site. Look at my Photography, Music, and Programming... things.";
 }
 
-<h1>Photography, Music, Programming</h1>
-<img src="~/Content/images/photography/philly-towers-in-a-row.jpg" class="banner-image" alt="Three towers against a cloudy sky" />
-<h2>Photography</h2>
+<h1>The Projects and Efforts of Matt Rhine</h1>
+
+<div class="category-row">
+    <div class="item">
+        <h2>Photography</h2>
+        <a href="~/Photography" title="To the photography section"><img src="~/Content/images/photography/philly-towers-in-a-row.jpg" class="banner-image" alt="Three towers against a cloudy sky" /></a>
+    </div>
+    <div class="item">
+        <h2>Music</h2>
+        <a href="~/Music" title="To the music section"><img src="~/Content/images/band-show.jpg" class="banner-image" alt="The Disgruntled Sherpa Project in concert" /></a>
+    </div>
+    <div class="item">
+        <h2>Programming</h2>
+        <a href="~/Programming" title="To the programming section"><img src="~/Content/images/screen-of-code.jpg" class="banner-image" alt="Screenshot of code" /></a>
+    </div>
+</div>
+
+@section styles {
+    @Styles.Render("~/bundles/sections/home")
+}

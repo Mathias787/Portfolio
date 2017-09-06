@@ -1,3 +1,13 @@
 ﻿/* #region home page */
+.category-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .category-row div.item {
+    width: 100%; }
+    @media screen and (min-width: 1100px) {
+      .category-row div.item {
+        width: calc(33.333% - 20px); } }
+
 /* #endregion home page */
 

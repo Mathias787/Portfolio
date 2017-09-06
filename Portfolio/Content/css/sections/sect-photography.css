@@ -1,8 +1,8 @@
 ﻿/* #region photography page */
-.dogtography-box {
+.portfolio-box {
   display: flex;
   justify-content: space-between; }
-  .dogtography-box div + div {
+  .portfolio-box div + div {
     margin-left: 10px; }
 
 /* #endregion photography page */

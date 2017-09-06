@@ -200,6 +200,7 @@
     <Content Include="Content\css\sections\sect-photography.min.css">
       <DependentUpon>sect-photography.css</DependentUpon>
     </Content>
+    <Content Include="Content\images\band-show.jpg" />
     <Content Include="Content\images\icons\500px_mark_dark.svg" />
     <Content Include="Content\images\icons\github_mark_dark.svg" />
     <Content Include="Content\images\icons\instagram_mark_dark.svg" />
@@ -213,6 +214,7 @@
     <Content Include="Content\images\photography\dogtography\stairs-dog.jpg" />
     <Content Include="Content\images\photography\dogtography\white-cottonball.jpg" />
     <Content Include="Content\images\photography\philly-towers-in-a-row.jpg" />
+    <Content Include="Content\images\screen-of-code.jpg" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
     <Content Include="favicon.ico" />

@@ -407,12 +407,12 @@ body {
       grid-template-rows: auto auto auto 1fr auto; } }
   @media screen and (min-width: 1600px) {
     body {
-      grid-template-columns: 250px 0.33fr 700px 0.67fr 400px;
+      grid-template-columns: 250px 50px auto 1fr auto;
       grid-template-rows: 100px 1fr auto; } }
   @media screen and (min-width: 2100px) {
     body {
-      grid-template-columns: 250px 0.5fr 700px 0.5fr 300px 200px 400px;
-      grid-template-rows: 100px 1fr; } }
+      grid-template-columns: 250px 50px auto 1fr auto 200px 400px;
+      grid-template-rows: auto 1fr; } }
 
 header {
   grid-column: 3; }
@@ -576,6 +576,7 @@ nav ul {
         padding-right: 0; } }
 
 main {
+  max-width: 1200px;
   padding-bottom: 50px; }
   main h1, main h2, main h3, main h4, main h5, main h6, main p, main ul, main ol {
     max-width: 700px; }
