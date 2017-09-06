@@ -11,13 +11,7 @@
         position: relative;
         border-top: none;
         border-left: $site-border;
-
-
-        & > div {
-            position: fixed;
-            /*height: 100vh; Looking for a solution if the user makes the browser window too small vertically
-            overflow-y: scroll;*/
-        }
+        text-align: center;
     }
 
     ul.social-links {
@@ -25,8 +19,19 @@
         padding: 0;
         list-style: none;
 
+        @media #{$mq-qhd-min} {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
         li {
             padding: 0 10px;
+
+            @media #{$mq-qhd-min} {
+                padding: 20px 0;
+                width: 50%;
+            }
+
             &:first-child {
                 padding-left: 0;
             }
@@ -36,11 +41,14 @@
                 padding: 15px;
 
                 img {
-                    height:30px;
+                    height: 30px;
                     width: auto;
                     fill: $copy-color;
+
+                    @media #{$mq-qhd-min} {
+                        height: 50px;
+                    }
                 }
             }
         }
     }
-}

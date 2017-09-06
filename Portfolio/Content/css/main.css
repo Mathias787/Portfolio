@@ -515,21 +515,19 @@ header {
   header p {
     font-family: "Roboto Slab", serif;
     font-weight: bold;
+    font-size: 1.1em;
     margin-left: 25px; }
     @media screen and (min-width: 650px) {
       header p {
-        font-size: 1.25em; } }
+        font-size: 1.65em; } }
     @media screen and (min-width: 1100px) {
       header p {
         margin-left: 50px;
         font-size: 2em; } }
     header p span {
       display: block;
-      font-size: 0.5em;
+      font-size: 0.65em;
       color: #626262; }
-      @media screen and (min-width: 1100px) {
-        header p span {
-          font-size: 0.7em; } }
 
 @media screen and (min-width: 650px) {
   nav {
@@ -605,17 +603,25 @@ footer {
     footer {
       position: relative;
       border-top: none;
-      border-left: 1px solid #aaa; }
+      border-left: 1px solid #aaa;
+      text-align: center; }
       footer > div {
-        position: fixed;
         /*height: 100vh; Looking for a solution if the user makes the browser window too small vertically
             overflow-y: scroll;*/ } }
   footer ul.social-links {
     display: flex;
     padding: 0;
     list-style: none; }
+    @media screen and (min-width: 2100px) {
+      footer ul.social-links {
+        flex-direction: row;
+        flex-wrap: wrap; } }
     footer ul.social-links li {
       padding: 0 10px; }
+      @media screen and (min-width: 2100px) {
+        footer ul.social-links li {
+          padding: 20px 0;
+          width: 50%; } }
       footer ul.social-links li:first-child {
         padding-left: 0; }
       footer ul.social-links li a {
