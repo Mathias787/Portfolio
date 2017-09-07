@@ -4,7 +4,11 @@
     display: flex;
     justify-content: space-between;
 
-    & div + div {
+    & + .portfolio-box {
+        margin-top: 5px;
+    }
+
+    > div + div {
         margin-left: 10px;
     }
 }

@@ -19,8 +19,23 @@ namespace Portfolio
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/respond.js"));
+            // Vendor bundles
+            // Zepto
+            bundles.Add(new ScriptBundle("~/bundles/vendor/zepto").Include(
+                      "~/Scripts/vendor/zepto/zepto.js",
+                      "~/Scripts/vendor/zepto/event.js",
+                      "~/Scripts/vendor/zepto/ajax.js",
+                      "~/Scripts/vendor/zepto/form.js",
+                      "~/Scripts/vendor/zepto/ie.js"));
+
+            // Magnific Popup
+            bundles.Add(new ScriptBundle("~/bundles/vendor/magnific").Include(
+                    "~/Scripts/vendor/magnific-popup/core.js",
+                    "~/Scripts/vendor/magnific-popup/inline.js",
+                    "~/Scripts/vendor/magnific-popup/gallery.js",
+                    "~/Scripts/vendor/magnific-popup/retina.js",
+                    "~/Scripts/vendor/magnific-popup/imagezoom.js"));
+
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/css/normalize.css",

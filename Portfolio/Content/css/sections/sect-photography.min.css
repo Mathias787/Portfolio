@@ -1,1 +1,1 @@
-﻿.portfolio-box{display:flex;justify-content:space-between;}.portfolio-box div+div{margin-left:10px;}
+﻿.portfolio-box{display:flex;justify-content:space-between;}.portfolio-box+.portfolio-box{margin-top:5px;}.portfolio-box>div+div{margin-left:10px;}
