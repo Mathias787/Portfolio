@@ -36,7 +36,12 @@ namespace Portfolio
                     "~/Scripts/vendor/magnific-popup/retina.js",
                     "~/Scripts/vendor/magnific-popup/imagezoom.js"));
 
+            // Photoswipe Popup
+            bundles.Add(new ScriptBundle("~/bundles/vendor/photo-swipe").Include(
+                    "~/Scripts/vendor/photo-swipe/photoswipe.js",
+                    "~/Scripts/vendor/photo-swipe/photoswipe-ui-default.js"));
 
+            // Site styles
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/css/normalize.css",
                       "~/Content/css/main.css"));
@@ -48,6 +53,13 @@ namespace Portfolio
             // Photography bundle
             bundles.Add(new StyleBundle("~/bundles/sections/photography").Include(
                       "~/Content/css/sections/sect-photography.css"));
+
+            // Vendor bundles
+
+            // Photo-swipe
+            bundles.Add(new StyleBundle("~/bundles/vendor/photo-swipe-css").Include(
+                    "~/Scripts/vendor/photo-swipe/photoswipe.css",
+                    "~/Scripts/vendor/photo-swipe/default-skin/default-skin.css"));
         }
     }
 }

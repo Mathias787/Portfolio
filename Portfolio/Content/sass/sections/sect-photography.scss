@@ -4,12 +4,25 @@
     display: flex;
     justify-content: space-between;
 
-    & + .portfolio-box {
-        margin-top: 5px;
-    }
+    figure {
+        margin: 0;
 
-    > div + div {
-        margin-left: 10px;
+        & + figure {
+            margin-left: 10px;
+        }
+
+        figcaption {
+            display: none;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+        }
+            img {
+                width: 100%;
+                height: auto;
+            }
     }
 }
 
