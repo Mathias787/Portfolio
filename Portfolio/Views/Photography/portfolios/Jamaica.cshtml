@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Photography";
+}
+
+<h3>Jamaica</h3>
+
+<div class="portfolio-box jamaica">
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/jamaica/lightning-show_LG.jpg" itemprop="contentUrl" data-size="2000x1333">
+            <img src="~/Content/images/photography/jamaica/lightning-show.jpg" itemprop="thumbnail" alt="Lightning show at Frenchmans Cove" />
+        </a>
+        <figcaption itemprop="caption description">Lightning show at Frenchmans Cove</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/jamaica/waves-crashing-near-beach_LG.jpg" itemprop="contentUrl" data-size="2000x1333">
+            <img src="~/Content/images/photography/jamaica/waves-crashing-near-beach.jpg" alt="Waves crash into rocks near a sandy beach" />
+        </a>
+        <figcaption itemprop="caption description">Waves crash into rocks near a sandy beach</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/jamaica/view-with-a-palm_LG.jpg" itemprop="contentUrl" data-size="2000x1333">
+            <img src="~/Content/images/photography/jamaica/view-with-a-palm.jpg" alt="View of the mountains with a palm tree nearby" />
+        </a>
+        <figcaption itemprop="caption description">View of the mountains with a palm tree nearby</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/jamaica/funeral-procession_LG.jpg" itemprop="contentUrl" data-size="2000x1333">
+            <img src="~/Content/images/photography/jamaica/funeral-procession.jpg" alt="Funeral procession goes by" />
+        </a>
+        <figcaption itemprop="caption description">Funeral procession goes by</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/jamaica/chapel-fort-rocky_LG.jpg" itemprop="contentUrl" data-size="2000x1333">
+            <img src="~/Content/images/photography/jamaica/chapel-fort-rocky.jpg" alt="A chapel sits in golden light in Fort Rocky" />
+        </a>
+        <figcaption itemprop="caption description">A chapel sits in golden light in Fort Rocky</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/jamaica/a-goat_LG.jpg" itemprop="contentUrl" data-size="2000x1333">
+            <img src="~/Content/images/photography/jamaica/a-goat.jpg" alt="A goat looks over" />
+        </a>
+        <figcaption itemprop="caption description">A goat looks over</figcaption>
+    </figure>
+</div>
+
+@{ Html.RenderPartial("_PhotoSwipe"); }

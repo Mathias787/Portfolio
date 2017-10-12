@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Photography";
+}
+
+<h3>Dogtography</h3>
+
+<div class="portfolio-box dogtography">
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/dogtography/sheltie-looking-right.jpg" itemprop="contentUrl" data-size="800x690">
+            <img src="~/Content/images/photography/dogtography/sheltie-looking-right.jpg" alt="Bi-black Shetland Sheepdog glancing to the right" />
+        </a>
+        <figcaption itemprop="caption description">Bi-black Shetland Sheepdog glancing to the right</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/dogtography/white-cottonball.jpg" itemprop="contentUrl" data-size="1035x690">
+            <img src="~/Content/images/photography/dogtography/white-cottonball.jpg" alt="A white fluffy dog looking into the camera" />
+        </a>
+        <figcaption itemprop="caption description">A white fluffy dog looking into the camera</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/dogtography/puppy-pounce.jpg" itemprop="contentUrl" data-size="542x690">
+            <img src="~/Content/images/photography/dogtography/puppy-pounce.jpg" alt="Puppy pouncing on another dog" />
+        </a>
+        <figcaption itemprop="caption description">Puppy pouncing on another dog</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/dogtography/picnic-table-dog.jpg" itemprop="contentUrl" data-size="981x690">
+            <img src="~/Content/images/photography/dogtography/picnic-table-dog.jpg" alt="Dog looking up from picnic table" />
+        </a>
+        <figcaption itemprop="caption description">Dog looking up from picnic table</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/dogtography/stairs-dog.jpg" itemprop="contentUrl" data-size="1035x690">
+            <img src="~/Content/images/photography/dogtography/stairs-dog.jpg" alt="Shetland Sheepdog running down the stairs" />
+        </a>
+        <figcaption itemprop="caption description">Shetland Sheepdog running down the stairs</figcaption>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/Photograph">
+        <a href="~/Content/images/photography/dogtography/mini-aussie.jpg" itemprop="contentUrl" data-size="889x690">
+            <img src="~/Content/images/photography/dogtography/mini-aussie.jpg" alt="Mini Australian shepard looking to its side" />
+        </a>
+        <figcaption itemprop="caption description">Mini Australian shepard looking to its side</figcaption>
+    </figure>
+</div>
+
+@{ Html.RenderPartial("_PhotoSwipe"); }

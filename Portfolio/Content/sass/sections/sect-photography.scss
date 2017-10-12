@@ -2,10 +2,12 @@
 
 .portfolio-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     figure {
         margin: 0;
+        width: calc(33.333% - 6.666px);
 
         & + figure {
             margin-left: 10px;
@@ -13,6 +15,14 @@
 
         figcaption {
             display: none;
+        }
+
+        &:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+
+        &:nth-child(n + 4) {
+            margin-top: 7px;
         }
 
         a {
@@ -23,6 +33,14 @@
                 width: 100%;
                 height: auto;
             }
+    }
+
+    &.one-row {
+        flex-wrap: nowrap;
+
+        figure {
+            width: auto;
+        }
     }
 }
 

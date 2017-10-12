@@ -473,7 +473,7 @@ aside {
     aside {
       grid-area: 1 / 5 / span 2;
       /*grid-row: 1 / span 2;
-        grid-column: 6;*/ } }
+            grid-column: 6;*/ } }
 
 footer {
   grid-row: 5;
@@ -604,10 +604,7 @@ footer {
       position: relative;
       border-top: none;
       border-left: 1px solid #aaa;
-      text-align: center; }
-      footer > div {
-        /*height: 100vh; Looking for a solution if the user makes the browser window too small vertically
-            overflow-y: scroll;*/ } }
+      text-align: center; } }
   footer ul.social-links {
     display: flex;
     padding: 0;
@@ -631,6 +628,9 @@ footer {
           height: 30px;
           width: auto;
           fill: #222; }
+          @media screen and (min-width: 2100px) {
+            footer ul.social-links li a img {
+              height: 50px; } }
 
 /* #region general styles */
 *, *:before, *:after {
